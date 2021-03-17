@@ -1,9 +1,11 @@
 package com.infosys.user.controller;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -22,10 +24,12 @@ import org.springframework.web.server.ResponseStatusException;
 import com.infosys.user.dto.BuyerDTO;
 import com.infosys.user.dto.CartDTO;
 import com.infosys.user.dto.LoginDTO;
+import com.infosys.user.dto.MyKey;
+import com.infosys.user.dto.OrderDetailsDTO;
 import com.infosys.user.dto.ProductDTO;
+import com.infosys.user.dto.ProductsOrderedDTO;
 import com.infosys.user.dto.SellerDTO;
 import com.infosys.user.dto.WishlistDTO;
-import com.infosys.user.entity.MyKey;
 import com.infosys.user.service.UserService;
 
 @RestController
@@ -37,19 +41,22 @@ public class UserController {
 	UserService userService;
 	@Autowired
 	Environment environment;
+	@Value("${product.uri}")
+	String productUri;
+	@Value("${order.uri}")
+	String orderUri;
 	
 	@PostMapping(value="/seller/register", consumes=MediaType.APPLICATION_JSON_VALUE)
-	public String registerSeller(@RequestBody SellerDTO sellerDTO)
+	public ResponseEntity<String> registerSeller(@RequestBody SellerDTO sellerDTO)
 	{
 	  try {
 		userService.sellerRegistartion(sellerDTO);
 		String success="Seller registration is successful";
-		//ResponseEntity<String> response= new ResponseEntity<String>(success,HttpStatus.OK);
-		return success;
+		return new ResponseEntity<String>(success,HttpStatus.OK);
 	  }catch(Exception e)
 	  {
-		  return environment.getProperty(e.getMessage()); 
-		  //ResponseStatusException(HttpStatus.BAD_REQUEST,environment.getProperty(e.getMessage()),e);
+		  return new ResponseEntity<>(environment.getProperty(e.getMessage()),HttpStatus.BAD_REQUEST); 
+
 	  }
 	}
 	@PostMapping(value="/buyer/register", consumes=MediaType.APPLICATION_JSON_VALUE)
@@ -58,11 +65,10 @@ public class UserController {
 	  try {
 		userService.buyerRegistartion(buyerDTO);
 		String success="Buyer registration is successful";
-		ResponseEntity<String> response= new ResponseEntity<String>(success,HttpStatus.OK);
-		return response;
+		return new ResponseEntity<String>(success,HttpStatus.OK);
 	  }catch(Exception e)
 	  {
-		  throw new ResponseStatusException(HttpStatus.BAD_REQUEST,environment.getProperty(e.getMessage()),e);
+		  return new ResponseEntity<String>(environment.getProperty(e.getMessage()),HttpStatus.BAD_REQUEST);
 	  }
 	}
 	@PostMapping(value="/seller/login",consumes=MediaType.APPLICATION_JSON_VALUE)
@@ -83,7 +89,7 @@ public class UserController {
 			
 		}catch(Exception e)
 		{
-			 throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage(),e);
+			 return new ResponseEntity<String>(e.getMessage(),HttpStatus.BAD_REQUEST);
 		}
 	}
 
@@ -105,7 +111,7 @@ public class UserController {
 			
 		}catch(Exception e)
 		{
-			 throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage(),e);
+			 return new ResponseEntity<String>(e.getMessage(),HttpStatus.BAD_REQUEST);
 		}
 	}
 	
@@ -170,7 +176,7 @@ public class UserController {
 	
 		 if(userService.deleteSeller(sellerId))
 		 { String success="Deleted Successfully !!";
-		 
+		 new RestTemplate().delete(productUri+"/removeProducts/"+sellerId);
 		 ResponseEntity<String> response=new ResponseEntity<String>(success,HttpStatus.OK);
 		 return response;
 		 }
@@ -199,31 +205,70 @@ public class UserController {
 		 }
 	}catch(Exception e)
 	{
-		 throw new ResponseStatusException(HttpStatus.NOT_FOUND,e.getMessage(),e);
+		 return new ResponseEntity<String>(e.getMessage(),HttpStatus.NOT_FOUND);
 	}
 
 	}
 	
 	@PostMapping(value="/cart/add",consumes=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<String> addToCart(@RequestBody CartDTO cartDTO)
-	{   try {
+	{   try { 
+		ProductDTO product=new RestTemplate().getForObject(productUri+"/Id/"+cartDTO.getProdId(),ProductDTO.class);
+		if(product!=null&&product.getStock()>=cartDTO.getQuantity())
+		{
 		userService.addToCart(cartDTO);
 		String success="Product Added to cart successfully!!!";
-		ResponseEntity<String> response= new ResponseEntity<String>(success,HttpStatus.OK);
-		return response;
+		return new ResponseEntity<String>(success,HttpStatus.OK);
+		}
+		else
+			throw new Exception("The required quantity is not available");
 	        }catch(Exception e){
-	        	   String failed="Product cannot be added to cart!!";
-	        	 throw new ResponseStatusException(HttpStatus.BAD_REQUEST,failed,e);
+	        	  
+	        	 return new ResponseEntity<String>(e.getMessage(),HttpStatus.BAD_REQUEST);
 	                           }
 	}
+		
+	@GetMapping(value="/cart/product/{buyerId}",produces=MediaType.APPLICATION_JSON_VALUE)
+	public List<Integer> getBuyerCartProduct(@PathVariable int buyerId)
+	{
+		try
+		{    List<CartDTO> listCart=userService.getBuyerCart(buyerId);
+			List<Integer> productList=new ArrayList<>();
+			for(CartDTO cart:listCart)
+			{
+				productList.add(cart.getProdId());
+			}
+			return productList;
+		}catch(Exception e)
+		{
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage(),e);
+		}
+	}
+	
+	@GetMapping(value="/cart/product/quantity/{buyerId}/{prodId}",produces=MediaType.APPLICATION_JSON_VALUE)
+	public Integer getBuyerCartQuantity(@PathVariable int buyerId,@PathVariable int prodId)
+	{
+		try
+		{    List<CartDTO> listCart=userService.getBuyerCart(buyerId);
+			for(CartDTO cart:listCart)
+			{ 
+				if(cart.getProdId()==prodId)
+					return cart.getQuantity();
+			}
+			return 0;
+		}catch(Exception e)
+		{
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage(),e);
+		}
+	}
+	
 	@DeleteMapping(value="/cart/remove")
 	public ResponseEntity<String> deleteFromCart(@RequestBody MyKey myKey)
 	{
 		try {
 		 if(userService.deleteFromCart(myKey))
 		 { String success="Deleted Successfully !!";
-		 ResponseEntity<String> response=new ResponseEntity<String>(success,HttpStatus.OK);
-		 return response;
+		 return new ResponseEntity<String>(success,HttpStatus.OK);
 		 }
 		 else
 		 {
@@ -231,7 +276,7 @@ public class UserController {
 		 }
 	}catch(Exception e)
 	{
-		 throw new ResponseStatusException(HttpStatus.NOT_FOUND,e.getMessage(),e);
+		 return new ResponseEntity<String>(e.getMessage(),HttpStatus.NOT_FOUND);
 	}
    }
 
@@ -243,8 +288,7 @@ public class UserController {
 			if(userService.addToWishlist(wishlistDTO))
 			{
 			String success="Product Added to wishlist successfully!!!";
-			ResponseEntity<String> response=new ResponseEntity<String>(success,HttpStatus.OK);
-			 return response;
+			return new ResponseEntity<String>(success,HttpStatus.OK);
 			} 
 			 else
 			 {
@@ -252,34 +296,91 @@ public class UserController {
 			 }
 		}catch(Exception e)
 		{
-			 throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage(),e);
+			 return new ResponseEntity<String>(e.getMessage(),HttpStatus.BAD_REQUEST);
 		}
 	   }
-	@PostMapping(value="/seller/{sellerId}/product/add",consumes=MediaType.APPLICATION_JSON_VALUE)
+	
+	@DeleteMapping(value="/wishlist/remove",consumes=MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<String> removeFromWishlist(@RequestBody MyKey myKey)
+	{
+		try {
+			if(userService.removeFromWishlist(myKey))
+			{
+				return new ResponseEntity<String>("Removed Successfully!!",HttpStatus.OK);
+			}
+			else
+			{
+				throw new Exception("No such product exist in wishlist");
+			}
+		}catch(Exception e)
+		{
+			return new ResponseEntity<String>(e.getMessage(),HttpStatus.OK);
+		}
+	}
+	
+	@PostMapping(value="/wishlistToCart/{quantity}",consumes=MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<String> wishlistToCart(@PathVariable int quantity,@RequestBody MyKey myKey)
+	{ 
+		try {
+	    ProductDTO product=new RestTemplate().getForObject(productUri+"/Id/"+myKey.getProdId(),ProductDTO.class);
+		CartDTO cartDTO=new CartDTO();
+		cartDTO.setBuyerId(myKey.getBuyerId());
+		cartDTO.setProdId(myKey.getProdId());
+		cartDTO.setQuantity(quantity);
+		if(product!=null&&userService.removeFromWishlist(myKey)==true&&product.getStock()>=quantity)
+		{
+		userService.addToCart(cartDTO);
+		return new ResponseEntity<String>("Successfully moved from wishlist to cart!!",HttpStatus.OK);
+		}
+		else
+			throw new Exception("Unable to move from Wishlist to Cart!!");
+		}catch(Exception e)
+		{
+			return new ResponseEntity<String>(e.getMessage(),HttpStatus.BAD_REQUEST);
+		}
+	}
+	
+	@PostMapping(value="/seller/products/add",consumes=MediaType.APPLICATION_JSON_VALUE)
 	public String addProduct(@RequestBody ProductDTO productDTO)
 	{   try {
 		
-		String url="http://localhost:8400/api/product/add/";
-		String response=new RestTemplate().postForObject(url, productDTO,String.class);
+		String response=new RestTemplate().postForObject(productUri, productDTO,String.class);
 		return response;
 	}catch(Exception e)
 	{
 		return e.getMessage();
 	}
 	}
-	@DeleteMapping(value="/seller/delete/product/{prodId}")
+	@DeleteMapping(value="/seller/products/delete/{prodId}")
 	public String deleteProduct(@PathVariable Integer prodId)
 	{
 		try {
-			
-		String url="http://localhost:8400//api/product/delete/";
-		new RestTemplate().delete(url+prodId);
+		new RestTemplate().delete(productUri+"delete/"+prodId);
 		String response="Deleted Successfully";
 		return response;
 		}catch(Exception e)
 		{
 			return e.getMessage();
 		}
+	}
+	
+	@PostMapping(value="/user/orderUpdate",consumes=MediaType.APPLICATION_JSON_VALUE)
+	public boolean orderUpdate(@RequestBody OrderDetailsDTO orderDetails)
+	{    System.out.println("Inside OrderUpdate Before reward");
+		userService.addRewardPoints(orderDetails.getBuyerId(),orderDetails.getAmount());
+		 System.out.println("Inside OrderUpdate after reward");
+		List<ProductsOrderedDTO> productsOrdered=orderDetails.getProductsOrdered();
+		 System.out.println("Inside OrderUpdate Before put"+productsOrdered);
+		new RestTemplate().postForObject(productUri+"/reduceStock", productsOrdered,Boolean.class);
+		 System.out.println("Inside OrderUpdate after put");
+		return true;
+		
+	}
+	
+	@GetMapping(value="/rewardPoints/{buyerId}")
+	public Integer getRewardPoints(@PathVariable Integer buyerId)
+	{   System.out.println("In Contoller");
+		return userService.getRewardPoints(buyerId);
 	}
 			
 	}

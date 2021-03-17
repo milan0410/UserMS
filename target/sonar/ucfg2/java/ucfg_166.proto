@@ -1,0 +1,61 @@
+
+_com.infosys.user.controller.UserController#deleteProduct(Ljava/lang/Integer;)Ljava/lang/String;g
+[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.javaã ã("5*¥
+3g
+[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.javaç ç((ª
+§
+g
+[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.javaç ç()
+responsejava.lang.String"__id*
+Deleted Successfully"‰
+g
+[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.javaè è(
+
+responsejava.lang.String*•
+4g
+[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.javaæ æ(&Ê
+Ç
+g
+[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.javaæ æ(&
+%2java.lang.String"__id*>*<,
+*com.infosys.user.controller.UserController"
+
+productUriµ
+²
+g
+[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.javaæ æ(0
+%3java.lang.String"__concat*
+
+%2java.lang.String*	
+delete/Ç
+Ä
+g
+[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.javaæ æ(7
+%4java.lang.String"__concat*
+
+%3java.lang.String*
+
+prodIdjava.lang.IntegerÒÏ
+g
+[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.javaæ æ(8
+
+%5void"Zorg.springframework.web.client.RestTemplate#delete(Ljava/lang/String;[Ljava/lang/Object;)V*3
+1
+%0+org.springframework.web.client.RestTemplate*
+
+%4java.lang.String2-delete(Ljava/lang/String;[Ljava/lang/Object;)*
+3*¡
+5g
+[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.javaæ æ(ÌÉ
+g
+[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.javaæ æ(1
+%0+org.springframework.web.client.RestTemplate"+org.springframework.web.client.RestTemplateÞ
+Û
+g
+[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.javaæ æ(
+%1"5org.springframework.web.client.RestTemplate#<init>()V*3
+1
+%0+org.springframework.web.client.RestTemplate*
+4:
+prodIdjava.lang.IntegerB.,
+*com.infosys.user.controller.UserController

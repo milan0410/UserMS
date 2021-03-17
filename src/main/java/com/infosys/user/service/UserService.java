@@ -10,11 +10,11 @@ import org.springframework.stereotype.Service;
 import com.infosys.user.dto.BuyerDTO;
 import com.infosys.user.dto.CartDTO;
 import com.infosys.user.dto.LoginDTO;
+import com.infosys.user.dto.MyKey;
 import com.infosys.user.dto.SellerDTO;
 import com.infosys.user.dto.WishlistDTO;
 import com.infosys.user.entity.Buyer;
 import com.infosys.user.entity.Cart;
-import com.infosys.user.entity.MyKey;
 import com.infosys.user.entity.Seller;
 import com.infosys.user.entity.Wishlist;
 import com.infosys.user.repository.BuyerRepository;
@@ -141,6 +141,7 @@ public class UserService {
 		Optional<Seller> optSeller=sellerRepo.findById(sellerId);
 		if(optSeller.isPresent())
 		{    optSeller.get().setIsActive(0);
+		     sellerRepo.save(optSeller.get());
 			return true;
 		
 		}
@@ -151,16 +152,40 @@ public class UserService {
 		Optional<Buyer> optBuyer=buyerRepo.findById(buyerId);
 		if(optBuyer.isPresent())
 		{    optBuyer.get().setIsActive(0);
+		     buyerRepo.save(optBuyer.get());
 			return true;
 		
 		}
 		return false;
 	}
 	
-	public void addToCart(CartDTO cartDTO)
-	{
+	public void addToCart(CartDTO cartDTO) throws Exception
+	{   MyKey myKey=new MyKey();
+	    myKey.setBuyerId(cartDTO.getBuyerId());
+	    myKey.setProdId(cartDTO.getProdId());
+		Optional<Cart> optCart=cartRepo.findById(myKey);
+		if(optCart.isPresent()!=true)
+		{
 		Cart cart=cartDTO.createEntity();
 		cartRepo.save(cart);
+		}
+		else throw new Exception("Already Present!!");
+	}
+	
+	public List<CartDTO> getBuyerCart(int buyerId) throws Exception
+	{
+		List<Cart> listCart=cartRepo.findAllByBuyerId(buyerId);
+		List<CartDTO> buyerCart=new ArrayList<>();
+		if(!listCart.isEmpty())
+		{
+		  for(Cart cart:listCart)
+		  {
+			  buyerCart.add(CartDTO.valueOf(cart));
+		  }
+		  return buyerCart;
+		}
+		else
+			throw new Exception("No products found in cart!!");
 	}
 	public boolean deleteFromCart(MyKey myKey)
 	{
@@ -187,5 +212,41 @@ public class UserService {
 	   }
 	   return false;
 	}
+	public boolean removeFromWishlist(MyKey myKey) {
+		Optional<Wishlist> optWishlist=wishlistRepo.findById(myKey);
+		if(optWishlist.isPresent()==true)
+		{
+			wishlistRepo.deleteById(myKey);
+			return true;
+		}
+		return false;
+	}
+	
+	public void addRewardPoints(int buyerId,double amount)
+	{
+		Optional<Buyer> optBuyer=buyerRepo.findById(buyerId);
+		if(optBuyer.isPresent()==true)
+		{
+			int rewardPoints=optBuyer.get().getRewardPoints();
+			optBuyer.get().setRewardPoints((int)amount/100);
+			if((rewardPoints+amount/100)>=10000)
+			{
+				optBuyer.get().setIsPrivileged(1);
+			}
+			buyerRepo.save(optBuyer.get());
+		}
+	}
+	
+	public Integer getRewardPoints(int buyerId)
+	{
+		Optional<Buyer> optBuyer=buyerRepo.findById(buyerId);
+		if(optBuyer.isPresent()==true)
+		{
+			return optBuyer.get().getRewardPoints();
+		}
+		else
+			return 0;
+	}
+	
 	
 }

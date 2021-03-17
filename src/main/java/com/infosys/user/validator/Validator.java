@@ -7,21 +7,21 @@ public class Validator {
 	
 	   public static boolean validate(BuyerDTO buyerDTO) throws Exception {
 
-	        if(!validateName(buyerDTO.getName()))
+	        if(validateName(buyerDTO.getName())!=true)
 	        {
 	            throw new Exception("Validator.INVALID_NAME");
 	                 }
 	        
-	        if(!validateEmail(buyerDTO.getEmail()))
+	        if(validateEmail(buyerDTO.getEmail())!=true)
 	                   {
 	                      throw new Exception("Validator.INVALID_EMAIL");
 	                   }
 
-	        if(!validatePhoneNumber(buyerDTO.getPhoneNumber()))
+	        if(validatePhoneNumber(buyerDTO.getPhoneNumber())!=true)
 	                   {
 	                      throw new Exception("Validator.INVALID_PHONE");
 	                   }
-	        if(!validatePassword(buyerDTO.getPassword()))
+	        if(validatePassword(buyerDTO.getPassword())!=true)
 	                   {
 	                      throw new Exception("Validator.INVALID_PASSWORD");
 	                    }
@@ -57,7 +57,7 @@ public class Validator {
 	    public static Boolean validateName(String name) {
 	            String regex="^[A-Za-z]+([\\s]*[A-Za-z]+)*$";                 
 
-	            if(name.matches(regex))
+	            if(name!=null&&name.matches(regex))
 	                return true;
 	              else
 	        return false;
@@ -65,22 +65,21 @@ public class Validator {
 
 	      public static Boolean validateEmail(String email) {
 	              String regex1="^[a-z0-9_\\.]+@[a-z]+\\.[a-z]+$";
-	            if(email.matches(regex1))
+	            if(email!=null&&email.matches(regex1))
 	                return true;
 	              else
 	        return false;  
 	              }
 	      public static Boolean validatePhoneNumber(String phoneNumber){
 	                 String regex2= "[0-9]{10}";
-	              if(phoneNumber.matches(regex2))
+	              if(phoneNumber!=null&&phoneNumber.matches(regex2))
 	                return true;
 	              else
 	        return false;
 	               }
 	    public static Boolean validatePassword(String password){         
-	         // String regex3= "[[A-Z]+[a-z]+[0-9]+[-!@#(\\$)%(\\^)&(\\*)]+]{7,20}";
 	    	String regex3="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[-!@#(\\$)%(\\^)&(\\*)]).{7,20}$";
-	            if(password.matches(regex3))
+	            if(password!=null&&password.matches(regex3))
 	                return true;
 	              else
 	        return false;

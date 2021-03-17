@@ -1,0 +1,92 @@
+
+Mcom.infosys.user.dto.SellerDTO#createEntity()Lcom/infosys/user/entity/Seller;Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java> >("1*å
+1Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java@ @(§°
+Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java@ @($
+%0com.infosys.user.entity.Seller"com.infosys.user.entity.Seller∂
+≥
+Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java@ @(
+%1"(com.infosys.user.entity.Seller#<init>()V*&
+$
+%0com.infosys.user.entity.Seller∂
+≥
+Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java@ @((
+sellercom.infosys.user.entity.Seller"__id*&
+$
+%0com.infosys.user.entity.Seller„‡
+Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.javaA A(!
+%2java.lang.String";com.infosys.user.dto.SellerDTO#getEmail()Ljava/lang/String;*" 
+com.infosys.user.dto.SellerDTO2
+getEmail()åâ
+Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.javaA A("
+
+%3void"<com.infosys.user.entity.Seller#setEmail(Ljava/lang/String;)V**
+(
+sellercom.infosys.user.entity.Seller*
+
+%2java.lang.String2setEmail(Ljava/lang/String;)‹Ÿ
+Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.javaB B(
+
+%4void".com.infosys.user.entity.Seller#setIsActive(I)V**
+(
+sellercom.infosys.user.entity.Seller*22setIsActive(I)·ﬁ
+Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.javaC C(
+%5java.lang.String":com.infosys.user.dto.SellerDTO#getName()Ljava/lang/String;*" 
+com.infosys.user.dto.SellerDTO2	getName()äá
+Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.javaC C( 
+
+%6void";com.infosys.user.entity.Seller#setName(Ljava/lang/String;)V**
+(
+sellercom.infosys.user.entity.Seller*
+
+%5java.lang.String2setName(Ljava/lang/String;)ÈÊ
+Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.javaD D('
+%7java.lang.String">com.infosys.user.dto.SellerDTO#getPassword()Ljava/lang/String;*" 
+com.infosys.user.dto.SellerDTO2getPassword()íè
+Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.javaD D((
+
+%8void"?com.infosys.user.entity.Seller#setPassword(Ljava/lang/String;)V**
+(
+sellercom.infosys.user.entity.Seller*
+
+%7java.lang.String2setPassword(Ljava/lang/String;)ÔÏ
+Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.javaE E(-
+%9java.lang.String"Acom.infosys.user.dto.SellerDTO#getPhoneNumber()Ljava/lang/String;*" 
+com.infosys.user.dto.SellerDTO2getPhoneNumber()ôñ
+Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.javaE E(.
+%10void"Bcom.infosys.user.entity.Seller#setPhoneNumber(Ljava/lang/String;)V**
+(
+sellercom.infosys.user.entity.Seller*
+
+%9java.lang.String2"setPhoneNumber(Ljava/lang/String;)Ã…
+Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.javaF F('
+
+%11int"-com.infosys.user.dto.SellerDTO#getSellerId()I*" 
+com.infosys.user.dto.SellerDTO2getSellerId()Â‚
+Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.javaF F((
+%12void".com.infosys.user.entity.Seller#setSellerId(I)V**
+(
+sellercom.infosys.user.entity.Seller*
+
+
+%11int2setSellerId(I)"á
+Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.javaG G(*
+(
+sellercom.infosys.user.entity.SellerB" 
+com.infosys.user.dto.SellerDTO

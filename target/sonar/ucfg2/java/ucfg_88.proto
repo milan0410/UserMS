@@ -1,0 +1,109 @@
+
+Wcom.infosys.user.service.UserService#addToWishlist(Lcom/infosys/user/dto/WishlistDTO;)Za
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaÊ Ê("3*—
+
+2a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaÑ Ñ("¤¡
+a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaÑ Ñ(1&
+%9 com.infosys.user.entity.Wishlist"Qcom.infosys.user.dto.WishlistDTO#createEntity()Lcom/infosys/user/entity/Wishlist;*1
+/
+wishlistDTO com.infosys.user.dto.WishlistDTO2createEntity()Ä
+Á
+a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaÑ Ñ(2,
+wishlist com.infosys.user.entity.Wishlist"__id*(
+&
+%9 com.infosys.user.entity.Wishlistß
+Ü
+a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaÒ Ò(5
+%10.com.infosys.user.repository.WishlistRepository"__id*:*8&
+$com.infosys.user.service.UserService"
+wishlistRepoñî
+a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaÒ Ò( '
+%11 com.infosys.user.entity.Wishlist"]org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;*7
+5
+%10.com.infosys.user.repository.WishlistRepository*.
+,
+wishlist com.infosys.user.entity.Wishlist2save(Ljava/lang/Object;)"k
+a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaÓ Ó(
+""*Å
+3a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaË Ë(¤¡
+a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaË Ë( 
+%0com.infosys.user.dto.MyKey"com.infosys.user.dto.MyKey¶
+³
+a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaË Ë(
+%1"$com.infosys.user.dto.MyKey#<init>()V*"
+ 
+%0com.infosys.user.dto.MyKey²
+¯
+a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaË Ë( 
+mkcom.infosys.user.dto.MyKey"__id*"
+ 
+%0com.infosys.user.dto.MyKeyâß
+a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaÌ Ì(*	
+%2int".com.infosys.user.dto.WishlistDTO#getBuyerId()I*1
+/
+wishlistDTO com.infosys.user.dto.WishlistDTO2getBuyerId()ÝÚ
+a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaÌ Ì(+
+
+%3void")com.infosys.user.dto.MyKey#setBuyerId(I)V*"
+ 
+mkcom.infosys.user.dto.MyKey*
+	
+%2int2setBuyerId(I)àÝ
+a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaÍ Í((	
+%4int"-com.infosys.user.dto.WishlistDTO#getProdId()I*1
+/
+wishlistDTO com.infosys.user.dto.WishlistDTO2getProdId()ÛØ
+a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaÍ Í()
+
+%5void"(com.infosys.user.dto.MyKey#setProdId(I)V*"
+ 
+mkcom.infosys.user.dto.MyKey*
+	
+%4int2setProdId(I)Þ
+Û
+a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaÎ# Î(/4
+%6.com.infosys.user.repository.WishlistRepository"__id*:*8&
+$com.infosys.user.service.UserService"
+wishlistRepoßÜ
+a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaÎ# Î(<
+%7java.util.Optional"corg.springframework.data.repository.CrudRepository#findById(Ljava/lang/Object;)Ljava/util/Optional;*6
+4
+%6.com.infosys.user.repository.WishlistRepository*"
+ 
+mkcom.infosys.user.dto.MyKey2findById(Ljava/lang/Object;)«
+¨
+a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaÎ Î(=!
+optWishlistjava.util.Optional"__id*
+
+%7java.util.OptionalÈÅ
+a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaÏ Ï(
+%8boolean"java.util.Optional#isPresent()Z*#
+!
+optWishlistjava.util.Optional2isPresent()*
+2
+1*Ó
+1a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaÕ Õ("k
+a
+UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/service/UserService.javaÕ Õ(
+"":/
+wishlistDTO com.infosys.user.dto.WishlistDTOB(&
+$com.infosys.user.service.UserService

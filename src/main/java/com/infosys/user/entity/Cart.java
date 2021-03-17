@@ -3,6 +3,8 @@ package com.infosys.user.entity;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
 
+import com.infosys.user.dto.MyKey;
+
 import java.io.Serializable;
 
 import javax.persistence.Column;

@@ -5,8 +5,8 @@ import java.io.Serializable;
 @SuppressWarnings("serial")
 public class MyKey implements Serializable{
 
-	int buyerId;
-	int prodId;
+	private int buyerId;
+	private int prodId;
 	
 	public int getBuyerId() {
 		return buyerId;
@@ -26,11 +26,22 @@ public class MyKey implements Serializable{
 
 	@Override
 	public boolean equals(Object obj)
-	{  MyKey myKey=(MyKey)obj;
+	{   if(obj==null)
+    	return false;
+	    if(obj.getClass()!=this.getClass())
+	    	return false;
+		MyKey myKey=(MyKey)obj;
+	  
 		if(myKey.getBuyerId()==this.getBuyerId()&&myKey.getProdId()==this.getProdId())
 		{
 			return true;
 		}
 		return false;
+	}
+	
+	@Override
+	public int hashCode()
+	{
+		return this.buyerId+this.prodId;
 	}
 }

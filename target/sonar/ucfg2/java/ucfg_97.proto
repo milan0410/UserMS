@@ -1,0 +1,49 @@
+
+Qcom.infosys.user.dto.WishlistDTO#createEntity()Lcom/infosys/user/entity/Wishlist;[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java ("1*ï
+1[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java   ("™ß
+[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java   ( &
+%0 com.infosys.user.entity.Wishlist" com.infosys.user.entity.Wishlistº
+π
+[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java   ("
+%1"*com.infosys.user.entity.Wishlist#<init>()V*(
+&
+%0 com.infosys.user.entity.Wishlistæ
+ª
+[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java   (#,
+wishlist com.infosys.user.entity.Wishlist"__id*(
+&
+%0 com.infosys.user.entity.WishlistœÃ
+[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java! !('	
+%2int".com.infosys.user.dto.WishlistDTO#getBuyerId()I*$"
+ com.infosys.user.dto.WishlistDTO2getBuyerId()ÈÊ
+[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java! !((
+
+%3void"/com.infosys.user.entity.Wishlist#setBuyerId(I)V*.
+,
+wishlist com.infosys.user.entity.Wishlist*
+	
+%2int2setBuyerId(I)Õ 
+[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java" "(%	
+%4int"-com.infosys.user.dto.WishlistDTO#getProdId()I*$"
+ com.infosys.user.dto.WishlistDTO2getProdId()Á‰
+[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java" "(&
+
+%5void".com.infosys.user.entity.Wishlist#setProdId(I)V*.
+,
+wishlist com.infosys.user.entity.Wishlist*
+	
+%4int2setProdId(I)"ç
+[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java# #(.
+,
+wishlist com.infosys.user.entity.WishlistB$"
+ com.infosys.user.dto.WishlistDTO

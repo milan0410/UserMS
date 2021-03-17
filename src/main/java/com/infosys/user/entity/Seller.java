@@ -3,12 +3,15 @@ package com.infosys.user.entity;
 import javax.persistence.Id;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 
 
 @Entity
 public class Seller {
 	@Id
-	@Column(name="SELLERID",length=1)
+	@Column(name="SELLERID",length=11)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	int sellerId;
 	@Column(name="NAME",nullable=false,length=45)
 	String name;

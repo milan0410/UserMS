@@ -1,0 +1,52 @@
+
+ncom.infosys.user.dto.WishlistDTO#valueOf(Lcom/infosys/user/entity/Wishlist;)Lcom/infosys/user/dto/WishlistDTO;[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java (""1*≤
+1[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java (+™ß
+[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java ()&
+%0 com.infosys.user.dto.WishlistDTO" com.infosys.user.dto.WishlistDTOº
+π
+[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java (+
+%1"*com.infosys.user.dto.WishlistDTO#<init>()V*(
+&
+%0 com.infosys.user.dto.WishlistDTO¡
+æ
+[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java (,/
+wishlistDTO com.infosys.user.dto.WishlistDTO"__id*(
+&
+%0 com.infosys.user.dto.WishlistDTOŸ÷
+[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java (.	
+%2int".com.infosys.user.entity.Wishlist#getBuyerId()I*.
+,
+wishlist com.infosys.user.entity.Wishlist2getBuyerId()ÏÈ
+[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java (/
+
+%3void"/com.infosys.user.dto.WishlistDTO#setBuyerId(I)V*1
+/
+wishlistDTO com.infosys.user.dto.WishlistDTO*
+	
+%2int2setBuyerId(I)◊‘
+[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java ()	
+%4int"-com.infosys.user.entity.Wishlist#getProdId()I*.
+,
+wishlist com.infosys.user.entity.Wishlist2getProdId()Á‰
+[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java (*
+
+%5void".com.infosys.user.entity.Wishlist#setProdId(I)V*.
+,
+wishlist com.infosys.user.entity.Wishlist*
+	
+%4int2setProdId(I)"ê
+[
+QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java (1
+/
+wishlistDTO com.infosys.user.dto.WishlistDTO:,
+wishlist com.infosys.user.entity.WishlistB$""
+ com.infosys.user.dto.WishlistDTO
