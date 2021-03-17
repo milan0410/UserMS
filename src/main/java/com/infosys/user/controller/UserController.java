@@ -366,20 +366,20 @@ public class UserController {
 	
 	@PostMapping(value="/user/orderUpdate",consumes=MediaType.APPLICATION_JSON_VALUE)
 	public boolean orderUpdate(@RequestBody OrderDetailsDTO orderDetails)
-	{    System.out.println("Inside OrderUpdate Before reward");
+	{    
 		userService.addRewardPoints(orderDetails.getBuyerId(),orderDetails.getAmount());
-		 System.out.println("Inside OrderUpdate after reward");
+		
 		List<ProductsOrderedDTO> productsOrdered=orderDetails.getProductsOrdered();
-		 System.out.println("Inside OrderUpdate Before put"+productsOrdered);
+	
 		new RestTemplate().postForObject(productUri+"/reduceStock", productsOrdered,Boolean.class);
-		 System.out.println("Inside OrderUpdate after put");
+	
 		return true;
 		
 	}
 	
 	@GetMapping(value="/rewardPoints/{buyerId}")
 	public Integer getRewardPoints(@PathVariable Integer buyerId)
-	{   System.out.println("In Contoller");
+	{  
 		return userService.getRewardPoints(buyerId);
 	}
 			
