@@ -1,4 +1,4 @@
-package com.infosys.user.entity;
+package com.myproject.user.entity;
 
 import javax.persistence.Id;
 import javax.persistence.Column;

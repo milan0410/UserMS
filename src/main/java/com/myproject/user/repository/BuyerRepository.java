@@ -1,11 +1,11 @@
-package com.infosys.user.repository;
+package com.myproject.user.repository;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.infosys.user.entity.Buyer;
+import com.myproject.user.entity.Buyer;
 
 @Repository
 public interface BuyerRepository extends JpaRepository<Buyer,Integer > {

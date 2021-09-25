@@ -1,6 +1,6 @@
-package com.infosys.user.dto;
+package com.myproject.user.dto;
 
-import com.infosys.user.entity.Seller;
+import com.myproject.user.entity.Seller;
 
 public class SellerDTO {
 

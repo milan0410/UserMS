@@ -1,27 +1,25 @@
-package com.infosys.user.entity;
+package com.myproject.user.entity;
 
 import javax.persistence.Id;
 import javax.persistence.IdClass;
 
-import com.infosys.user.dto.MyKey;
-
-import java.io.Serializable;
+import com.myproject.user.dto.MyKey;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import java.io.Serializable;
 
 @SuppressWarnings("serial")
 @Entity
 @IdClass(MyKey.class)
-public class Cart implements Serializable{
+public class Wishlist implements Serializable {
 	@Id
 	@Column(name="BUYERID")
 	int buyerId;
 	@Id
 	@Column(name="PRODID")
 	int prodId;
-	@Column(name="QUANTITY",nullable=false)
-	int quantity;
+	
 	public int getBuyerId() {
 		return buyerId;
 	}
@@ -34,10 +32,5 @@ public class Cart implements Serializable{
 	public void setProdId(int prodId) {
 		this.prodId = prodId;
 	}
-	public int getQuantity() {
-		return quantity;
-	}
-	public void setQuantity(int quantity) {
-		this.quantity = quantity;
-	}
+
 }

@@ -1,17 +1,17 @@
 
->com.infosys.user.dto.SellerDTO#getPassword()Ljava/lang/String;Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java& &("1*†
+>com.myproject.user.dto.SellerDTO#getPassword()Ljava/lang/String;Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java& &("1*ï¿½
 1Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java'	 '(®
-«
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java'	 '(ï¿½
+ï¿½
 Y
 OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java'	 '(
 %0java.lang.String"__id*0*. 
-com.infosys.user.dto.SellerDTO"
+com.myproject.user.dto.SellerDTO"
 
 password"u
 Y
 OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java' '(
 
 %0java.lang.StringB" 
-com.infosys.user.dto.SellerDTO
+com.myproject.user.dto.SellerDTO

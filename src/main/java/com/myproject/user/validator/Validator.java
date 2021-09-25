@@ -1,7 +1,7 @@
-package com.infosys.user.validator;
+package com.myproject.user.validator;
 
-import com.infosys.user.dto.BuyerDTO;
-import com.infosys.user.dto.SellerDTO;
+import com.myproject.user.dto.BuyerDTO;
+import com.myproject.user.dto.SellerDTO;
 
 public class Validator {
 	

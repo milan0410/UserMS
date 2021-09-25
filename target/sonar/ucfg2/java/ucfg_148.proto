@@ -1,6 +1,6 @@
 
-„com.infosys.user.controller.UserController#registerSeller(Lcom/infosys/user/dto/SellerDTO;)Lorg/springframework/http/ResponseEntity;e
-[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java2 2(-"startingBlock*—
+ï¿½com.infosys.user.controller.UserController#registerSeller(Lcom/infosys/user/dto/SellerDTO;)Lorg/springframework/http/ResponseEntity;e
+[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java2 2(-"startingBlock*ï¿½
 startingBlocke
 [C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java2- 2(Oc
 a
@@ -8,21 +8,21 @@ a
 __unknown_file (
 %11"__id*8*6
 +
-	sellerDTOcom.infosys.user.dto.SellerDTO"
+	sellerDTOcom.myproject.user.dto.SellerDTO"
 emailb
 `
 
 __unknown_file (
 %12"__id*7*5
 +
-	sellerDTOcom.infosys.user.dto.SellerDTO"
+	sellerDTOcom.myproject.user.dto.SellerDTO"
 namef
 d
 
 __unknown_file (
 %13"__id*;*9
 +
-	sellerDTOcom.infosys.user.dto.SellerDTO"
+	sellerDTOcom.myproject.user.dto.SellerDTO"
 
 passwordi
 g
@@ -30,96 +30,96 @@ g
 __unknown_file (
 %14"__id*>*<
 +
-	sellerDTOcom.infosys.user.dto.SellerDTO"
-phoneNumber¿
-¼
+	sellerDTOcom.myproject.user.dto.SellerDTO"
+phoneNumberï¿½
+ï¿½
 e
 [C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java2. 2(:
 %15"
 __annotate*75
 3org.springframework.web.bind.annotation.RequestBody*
 
-%12¸
-µ
+%12ï¿½
+ï¿½
 e
 [C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java2E 2(N5
 +
-	sellerDTOcom.infosys.user.dto.SellerDTO"
+	sellerDTOcom.myproject.user.dto.SellerDTO"
 name"__annotation*
 
-%15¿
-¼
+%15ï¿½
+ï¿½
 e
 [C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java2. 2(:
 %16"
 __annotate*75
 3org.springframework.web.bind.annotation.RequestBody*
 
-%11¹
-¶
+%11ï¿½
+ï¿½
 e
 [C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java2E 2(N6
 +
-	sellerDTOcom.infosys.user.dto.SellerDTO"
+	sellerDTOcom.myproject.user.dto.SellerDTO"
 email"__annotation*
 
-%16¿
-¼
+%16ï¿½
+ï¿½
 e
 [C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java2. 2(:
 %17"
 __annotate*75
 3org.springframework.web.bind.annotation.RequestBody*
 
-%13¼
-¹
+%13ï¿½
+ï¿½
 e
 [C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java2E 2(N9
 +
-	sellerDTOcom.infosys.user.dto.SellerDTO"
+	sellerDTOcom.myproject.user.dto.SellerDTO"
 
 password"__annotation*
 
-%17¿
-¼
+%17ï¿½
+ï¿½
 e
 [C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java2. 2(:
 %18"
 __annotate*75
 3org.springframework.web.bind.annotation.RequestBody*
 
-%14¿
-¼
+%14ï¿½
+ï¿½
 e
 [C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java2E 2(N<
 +
-	sellerDTOcom.infosys.user.dto.SellerDTO"
+	sellerDTOcom.myproject.user.dto.SellerDTO"
 phoneNumber"__annotation*
 
 %18*
-7*…
+7*ï¿½
 5e
-[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java7 7(;"˜
+[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java7 7(;"ï¿½
 e
 [C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java7 7(;/
 -
-%3'org.springframework.http.ResponseEntity*ë
+%3'org.springframework.http.ResponseEntity*ï¿½
 6e
-[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java6 6(4´
-±
+[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java6 6(4ï¿½
+ï¿½
 e
 [C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java6 6(5
 successjava.lang.String"__id*%#
-!Seller registration is successful£
- 
+!Seller registration is successfulï¿½
+ï¿½
 e
 [C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java7, 7(9)
 %2#org.springframework.http.HttpStatus"__id*
-""Â¿
+""ï¿½ï¿½
 e
 [C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java7 7(#-
-%3'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntity×
-Ô
+%3'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityï¿½
+ï¿½
 e
 [C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java7	 7(:
 %4"horg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V*/
@@ -129,15 +129,15 @@ e
 successjava.lang.String*+
 )
 %2#org.springframework.http.HttpStatus*
-5*·
+5*ï¿½
 7e
-[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java5 5(Ý
-Ú
+[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java5 5(ï¿½
+ï¿½
 e
 [C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java5 5(*
 %0$com.infosys.user.service.UserService"__id*?*=,
-*com.infosys.user.controller.UserController"
-userServiceåâ
+*com.myproject.user.controller.UserController"
+userServiceï¿½ï¿½
 e
 [C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java5 5(+
 
@@ -145,7 +145,7 @@ e
 *
 %0$com.infosys.user.service.UserService*-
 +
-	sellerDTOcom.infosys.user.dto.SellerDTO24sellerRegistartion(Lcom/infosys/user/dto/SellerDTO;)*
+	sellerDTOcom.myproject.user.dto.SellerDTO24sellerRegistartion(Lcom/infosys/user/dto/SellerDTO;)*
 6:+
-	sellerDTOcom.infosys.user.dto.SellerDTOB.,
-*com.infosys.user.controller.UserController
+	sellerDTOcom.myproject.user.dto.SellerDTOB.,
+*com.myproject.user.controller.UserController

@@ -1,4 +1,4 @@
-package com.infosys.user.dto;
+package com.myproject.user.dto;
 
 public class LoginDTO {
 

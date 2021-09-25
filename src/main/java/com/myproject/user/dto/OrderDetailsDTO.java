@@ -1,4 +1,4 @@
-package com.infosys.user.dto;
+package com.myproject.user.dto;
 
 import java.util.Date;
 import java.util.List;

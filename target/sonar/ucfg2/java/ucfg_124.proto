@@ -1,16 +1,16 @@
 
-:com.infosys.user.entity.Buyer#getEmail()Ljava/lang/String;X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/entity/Buyer.java* *("1*ÿ
+:com.myproject.user.entity.Buyer#getEmail()Ljava/lang/String;X
+NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/entity/Buyer.java* *("1*ï¿½
 1X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/entity/Buyer.java+	 +(©
-¦
+NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/entity/Buyer.java+	 +(ï¿½
+ï¿½
 X
 NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/entity/Buyer.java+	 +(
 %0java.lang.String"__id*,**
-com.infosys.user.entity.Buyer"
+com.myproject.user.entity.Buyer"
 email"t
 X
 NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/entity/Buyer.java+ +(
 
 %0java.lang.StringB!
-com.infosys.user.entity.Buyer
+com.myproject.user.entity.Buyer

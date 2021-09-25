@@ -1,4 +1,4 @@
-package com.infosys.user.controller;
+package com.myproject.user.controller;
 
 
 import java.util.ArrayList;
@@ -21,16 +21,16 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.infosys.user.dto.BuyerDTO;
-import com.infosys.user.dto.CartDTO;
-import com.infosys.user.dto.LoginDTO;
-import com.infosys.user.dto.MyKey;
-import com.infosys.user.dto.OrderDetailsDTO;
-import com.infosys.user.dto.ProductDTO;
-import com.infosys.user.dto.ProductsOrderedDTO;
-import com.infosys.user.dto.SellerDTO;
-import com.infosys.user.dto.WishlistDTO;
-import com.infosys.user.service.UserService;
+import com.myproject.user.dto.BuyerDTO;
+import com.myproject.user.dto.CartDTO;
+import com.myproject.user.dto.LoginDTO;
+import com.myproject.user.dto.MyKey;
+import com.myproject.user.dto.OrderDetailsDTO;
+import com.myproject.user.dto.ProductDTO;
+import com.myproject.user.dto.ProductsOrderedDTO;
+import com.myproject.user.dto.SellerDTO;
+import com.myproject.user.dto.WishlistDTO;
+import com.myproject.user.service.UserService;
 
 @RestController
 @CrossOrigin

@@ -1,6 +1,6 @@
-package com.infosys.user.dto;
+package com.myproject.user.dto;
 
-import com.infosys.user.entity.Wishlist;
+import com.myproject.user.entity.Wishlist;
 
 public class WishlistDTO {
 

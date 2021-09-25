@@ -1,4 +1,4 @@
-package com.infosys.user.entity;
+package com.myproject.user.dto;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.infosys.user.service;
+package com.myproject.user.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,21 +7,21 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.infosys.user.dto.BuyerDTO;
-import com.infosys.user.dto.CartDTO;
-import com.infosys.user.dto.LoginDTO;
-import com.infosys.user.dto.MyKey;
-import com.infosys.user.dto.SellerDTO;
-import com.infosys.user.dto.WishlistDTO;
-import com.infosys.user.entity.Buyer;
-import com.infosys.user.entity.Cart;
-import com.infosys.user.entity.Seller;
-import com.infosys.user.entity.Wishlist;
-import com.infosys.user.repository.BuyerRepository;
-import com.infosys.user.repository.CartRepository;
-import com.infosys.user.repository.SellerRepository;
-import com.infosys.user.repository.WishlistRepository;
-import com.infosys.user.validator.Validator;
+import com.myproject.user.dto.BuyerDTO;
+import com.myproject.user.dto.CartDTO;
+import com.myproject.user.dto.LoginDTO;
+import com.myproject.user.dto.MyKey;
+import com.myproject.user.dto.SellerDTO;
+import com.myproject.user.dto.WishlistDTO;
+import com.myproject.user.entity.Buyer;
+import com.myproject.user.entity.Cart;
+import com.myproject.user.entity.Seller;
+import com.myproject.user.entity.Wishlist;
+import com.myproject.user.repository.BuyerRepository;
+import com.myproject.user.repository.CartRepository;
+import com.myproject.user.repository.SellerRepository;
+import com.myproject.user.repository.WishlistRepository;
+import com.myproject.user.validator.Validator;
 
 
 @Service
