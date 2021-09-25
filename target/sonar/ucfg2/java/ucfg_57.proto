@@ -1,16 +1,16 @@
 
-;com.infosys.user.dto.SellerDTO#getEmail()Ljava/lang/String;Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java ("1*ƒ
+;com.myproject.user.dto.SellerDTO#getEmail()Ljava/lang/String;Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java ("1*ï¿½
 1Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java	 («
-¨
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java	 (ï¿½
+ï¿½
 Y
 OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java	 (
 %0java.lang.String"__id*-*+ 
-com.infosys.user.dto.SellerDTO"
+com.myproject.user.dto.SellerDTO"
 email"u
 Y
 OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java (
 
 %0java.lang.StringB" 
-com.infosys.user.dto.SellerDTO
+com.myproject.user.dto.SellerDTO

@@ -1,17 +1,17 @@
 
->com.infosys.user.entity.Seller#getPassword()Ljava/lang/String;Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/entity/Seller.java3 3("1*†
+>com.myproject.user.entity.Seller#getPassword()Ljava/lang/String;Y
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/entity/Seller.java3 3("1*ï¿½
 1Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/entity/Seller.java4	 4(®
-«
+OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/entity/Seller.java4	 4(ï¿½
+ï¿½
 Y
 OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/entity/Seller.java4	 4(
 %0java.lang.String"__id*0*. 
-com.infosys.user.entity.Seller"
+com.myproject.user.entity.Seller"
 
 password"u
 Y
 OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/entity/Seller.java4 4(
 
 %0java.lang.StringB" 
-com.infosys.user.entity.Seller
+com.myproject.user.entity.Seller

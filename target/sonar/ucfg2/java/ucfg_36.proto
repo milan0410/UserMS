@@ -1,16 +1,16 @@
 
 Bcom.infosys.user.dto.ProductDTO#getDescription()Ljava/lang/String;Z
-PC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/ProductDTO.java$ $("1*ç
+PC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/ProductDTO.java$ $("1*ÔøΩ
 1Z
-PC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/ProductDTO.java% %(≥
-∞
+PC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/ProductDTO.java% %(ÔøΩ
+ÔøΩ
 Z
 PC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/ProductDTO.java% %(
 %0java.lang.String"__id*4*2!
-com.infosys.user.dto.ProductDTO"
+com.myproject.user.dto.ProductDTO"
 description"v
 Z
 PC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/ProductDTO.java% %(
 
 %0java.lang.StringB#!
-com.infosys.user.dto.ProductDTO
+com.myproject.user.dto.ProductDTO
