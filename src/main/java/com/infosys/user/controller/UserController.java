@@ -370,16 +370,26 @@ public class UserController {
 		userService.addRewardPoints(orderDetails.getBuyerId(),orderDetails.getAmount());
 		
 		List<ProductsOrderedDTO> productsOrdered=orderDetails.getProductsOrdered();
+<<<<<<< HEAD
 	
 		new RestTemplate().postForObject(productUri+"/reduceStock", productsOrdered,Boolean.class);
 	
+=======
+		
+		new RestTemplate().postForObject(productUri+"/reduceStock", productsOrdered,Boolean.class);
+		
+>>>>>>> 0240546268be3a10fbd46a41c469831a5fdd6a4a
 		return true;
 		
 	}
 	
 	@GetMapping(value="/rewardPoints/{buyerId}")
 	public Integer getRewardPoints(@PathVariable Integer buyerId)
+<<<<<<< HEAD
 	{  
+=======
+	{   
+>>>>>>> 0240546268be3a10fbd46a41c469831a5fdd6a4a
 		return userService.getRewardPoints(buyerId);
 	}
 			
