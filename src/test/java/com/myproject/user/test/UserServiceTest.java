@@ -1,4 +1,5 @@
-/*package com.infosys.user.test;
+package com.myproject.user.test;
+/*package com.myproject.user.test;
 
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
