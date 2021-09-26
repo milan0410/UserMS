@@ -1,61 +1,0 @@
-
-_com.infosys.user.controller.UserController#deleteProduct(Ljava/lang/Integer;)Ljava/lang/String;g
-[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java� �("5*�
-3g
-[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java� �((�
-�
-g
-[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java� �()
-responsejava.lang.String"__id*
-Deleted Successfully"�
-g
-[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java� �(
-
-responsejava.lang.String*�
-4g
-[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java� �(&�
-�
-g
-[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java� �(&
-%2java.lang.String"__id*>*<,
-*com.myproject.user.controller.UserController"
-
-productUri�
-�
-g
-[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java� �(0
-%3java.lang.String"__concat*
-
-%2java.lang.String*	
-delete/�
-�
-g
-[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java� �(7
-%4java.lang.String"__concat*
-
-%3java.lang.String*
-
-prodIdjava.lang.Integer��
-g
-[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java� �(8
-
-%5void"Zorg.springframework.web.client.RestTemplate#delete(Ljava/lang/String;[Ljava/lang/Object;)V*3
-1
-%0+org.springframework.web.client.RestTemplate*
-
-%4java.lang.String2-delete(Ljava/lang/String;[Ljava/lang/Object;)*
-3*�
-5g
-[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java� �(��
-g
-[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java� �(1
-%0+org.springframework.web.client.RestTemplate"+org.springframework.web.client.RestTemplate�
-�
-g
-[C:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/controller/UserController.java� �(
-%1"5org.springframework.web.client.RestTemplate#<init>()V*3
-1
-%0+org.springframework.web.client.RestTemplate*
-4:
-prodIdjava.lang.IntegerB.,
-*com.myproject.user.controller.UserController

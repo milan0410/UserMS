@@ -1,114 +1,0 @@
-
-Kcom.infosys.user.dto.BuyerDTO#createEntity()Lcom/infosys/user/entity/Buyer;X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaM M("1*�!
-1X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaO O(��
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaO O(#
-%0com.myproject.user.entity.Buyer"com.myproject.user.entity.Buyer�
-�
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaO O(
-%1"'com.myproject.user.entity.Buyer#<init>()V*%
-#
-%0com.myproject.user.entity.Buyer�
-�
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaO O(&
-buyercom.myproject.user.entity.Buyer"__id*%
-#
-%0com.myproject.user.entity.Buyer��
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaP P($	
-%2int"+com.myproject.user.dto.BuyerDTO#getBuyerId()I*!
-com.myproject.user.dto.BuyerDTO2getBuyerId()��
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaP P(%
-
-%3void",com.myproject.user.entity.Buyer#setBuyerId(I)V*(
-&
-buyercom.myproject.user.entity.Buyer*
-	
-%2int2setBuyerId(I)��
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaQ Q( 
-%4java.lang.String":com.myproject.user.dto.BuyerDTO#getEmail()Ljava/lang/String;*!
-com.myproject.user.dto.BuyerDTO2
-getEmail()��
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaQ Q(!
-
-%5void";com.myproject.user.entity.Buyer#setEmail(Ljava/lang/String;)V*(
-&
-buyercom.myproject.user.entity.Buyer*
-
-%4java.lang.String2setEmail(Ljava/lang/String;)��
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaR R(
-
-%6void"-com.myproject.user.entity.Buyer#setIsActive(I)V*(
-&
-buyercom.myproject.user.entity.Buyer*22setIsActive(I)��
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaS S(.	
-%7int"0com.infosys.user.dto.BuyerDTO#getIsPrivileged()I*!
-com.myproject.user.dto.BuyerDTO2getIsPrivileged()��
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaS S(/
-
-%8void"1com.infosys.user.entity.Buyer#setIsPrivileged(I)V*(
-&
-buyercom.myproject.user.entity.Buyer*
-	
-%7int2setIsPrivileged(I)��
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaT T(
-%9java.lang.String"9com.infosys.user.dto.BuyerDTO#getName()Ljava/lang/String;*!
-com.myproject.user.dto.BuyerDTO2	getName()��
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaT T(
-%10void":com.myproject.user.entity.Buyer#setName(Ljava/lang/String;)V*(
-&
-buyercom.myproject.user.entity.Buyer*
-
-%9java.lang.String2setName(Ljava/lang/String;)��
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaU U(&
-%11java.lang.String"=com.myproject.user.dto.BuyerDTO#getPassword()Ljava/lang/String;*!
-com.myproject.user.dto.BuyerDTO2getPassword()��
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaU U('
-%12void">com.myproject.user.entity.Buyer#setPassword(Ljava/lang/String;)V*(
-&
-buyercom.myproject.user.entity.Buyer*
-
-%11java.lang.String2setPassword(Ljava/lang/String;)��
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaV V(,
-%13java.lang.String"@com.myproject.user.dto.BuyerDTO#getPhoneNumber()Ljava/lang/String;*!
-com.myproject.user.dto.BuyerDTO2getPhoneNumber()��
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaV V(-
-%14void"Acom.infosys.user.entity.Buyer#setPhoneNumber(Ljava/lang/String;)V*(
-&
-buyercom.myproject.user.entity.Buyer*
-
-%13java.lang.String2"setPhoneNumber(Ljava/lang/String;)��
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaW W(.
-
-%15int"0com.infosys.user.dto.BuyerDTO#getRewardPoints()I*!
-com.myproject.user.dto.BuyerDTO2getRewardPoints()��
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaW W(/
-%16void"1com.infosys.user.entity.Buyer#setRewardPoints(I)V*(
-&
-buyercom.myproject.user.entity.Buyer*
-
-
-%15int2setRewardPoints(I)"�
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.javaX X((
-&
-buyercom.myproject.user.entity.BuyerB!
-com.myproject.user.dto.BuyerDTO

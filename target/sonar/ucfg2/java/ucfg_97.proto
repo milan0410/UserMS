@@ -1,49 +1,0 @@
-
-Qcom.infosys.user.dto.WishlistDTO#createEntity()Lcom/infosys/user/entity/Wishlist;[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java ("1*�
-1[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java   ("��
-[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java   ( &
-%0 com.myproject.user.entity.Wishlist" com.myproject.user.entity.Wishlist�
-�
-[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java   ("
-%1"*com.myproject.user.entity.Wishlist#<init>()V*(
-&
-%0 com.myproject.user.entity.Wishlist�
-�
-[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java   (#,
-wishlist com.myproject.user.entity.Wishlist"__id*(
-&
-%0 com.myproject.user.entity.Wishlist��
-[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java! !('	
-%2int".com.infosys.user.dto.WishlistDTO#getBuyerId()I*$"
- com.myproject.user.dto.WishlistDTO2getBuyerId()��
-[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java! !((
-
-%3void"/com.myproject.user.entity.Wishlist#setBuyerId(I)V*.
-,
-wishlist com.myproject.user.entity.Wishlist*
-	
-%2int2setBuyerId(I)��
-[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java" "(%	
-%4int"-com.myproject.user.dto.WishlistDTO#getProdId()I*$"
- com.myproject.user.dto.WishlistDTO2getProdId()��
-[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java" "(&
-
-%5void".com.infosys.user.entity.Wishlist#setProdId(I)V*.
-,
-wishlist com.myproject.user.entity.Wishlist*
-	
-%4int2setProdId(I)"�
-[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java# #(.
-,
-wishlist com.myproject.user.entity.WishlistB$"
- com.myproject.user.dto.WishlistDTO

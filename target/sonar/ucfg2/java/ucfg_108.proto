@@ -1,16 +1,0 @@
-
-@com.myproject.user.dto.BuyerDTO#getPhoneNumber()Ljava/lang/String;X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.java! !("1*�
-1X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.java"	 "(�
-�
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.java"	 "(
-%0java.lang.String"__id*2*0
-com.myproject.user.dto.BuyerDTO"
-phoneNumber"t
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/BuyerDTO.java" "(
-
-%0java.lang.StringB!
-com.myproject.user.dto.BuyerDTO

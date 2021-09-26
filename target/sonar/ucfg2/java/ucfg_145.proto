@@ -1,35 +1,0 @@
-
-Ycom.infosys.user.validator.Validator#validateEmail(Ljava/lang/String;)Ljava/lang/Boolean;_
-UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/validator/Validator.javaB B(*"4*Ï
-2_
-UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/validator/Validator.javaE E("i
-_
-UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/validator/Validator.javaE E(
-""*é
-3_
-UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/validator/Validator.javaD D("ú÷
-_
-UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/validator/Validator.javaD D(2
-%0boolean"-java.lang.String#matches(Ljava/lang/String;)Z*
-
-emailjava.lang.String*
-
-regex1java.lang.String2matches(Ljava/lang/String;)*
-2
-1*š
-4_
-UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/validator/Validator.javaC C(>«
-¨
-_
-UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/validator/Validator.javaC C(?
-regex1java.lang.String"__id*#!
-^[a-z0-9_\\.]+@[a-z]+\\.[a-z]+$*
-3
-1*Ï
-1_
-UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/validator/Validator.javaG G("i
-_
-UC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/validator/Validator.javaG	 G(
-"":
-emailjava.lang.StringB("&
-$com.infosys.user.validator.Validator

@@ -1,52 +1,0 @@
-
-ncom.infosys.user.dto.WishlistDTO#valueOf(Lcom/infosys/user/entity/Wishlist;)Lcom/infosys/user/dto/WishlistDTO;[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java (""1*�
-1[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java (+��
-[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java ()&
-%0 com.myproject.user.dto.WishlistDTO" com.myproject.user.dto.WishlistDTO�
-�
-[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java (+
-%1"*com.myproject.user.dto.WishlistDTO#<init>()V*(
-&
-%0 com.myproject.user.dto.WishlistDTO�
-�
-[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java (,/
-wishlistDTO com.myproject.user.dto.WishlistDTO"__id*(
-&
-%0 com.myproject.user.dto.WishlistDTO��
-[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java (.	
-%2int".com.infosys.user.entity.Wishlist#getBuyerId()I*.
-,
-wishlist com.myproject.user.entity.Wishlist2getBuyerId()��
-[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java (/
-
-%3void"/com.myproject.user.dto.WishlistDTO#setBuyerId(I)V*1
-/
-wishlistDTO com.myproject.user.dto.WishlistDTO*
-	
-%2int2setBuyerId(I)��
-[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java ()	
-%4int"-com.myproject.user.entity.Wishlist#getProdId()I*.
-,
-wishlist com.myproject.user.entity.Wishlist2getProdId()��
-[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java (*
-
-%5void".com.infosys.user.entity.Wishlist#setProdId(I)V*.
-,
-wishlist com.myproject.user.entity.Wishlist*
-	
-%4int2setProdId(I)"�
-[
-QC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/WishlistDTO.java (1
-/
-wishlistDTO com.myproject.user.dto.WishlistDTO:,
-wishlist com.myproject.user.entity.WishlistB$""
- com.myproject.user.dto.WishlistDTO

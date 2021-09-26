@@ -1,105 +1,0 @@
-
-hcom.infosys.user.dto.SellerDTO#valueOf(Lcom/infosys/user/entity/Seller;)Lcom/infosys/user/dto/SellerDTO;Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java3 3( "1*�
-1Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java5 5(%��
-Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java5 5(#$
-%0com.myproject.user.dto.SellerDTO"com.myproject.user.dto.SellerDTO�
-�
-Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java5 5(%
-%1"(com.myproject.user.dto.SellerDTO#<init>()V*&
-$
-%0com.myproject.user.dto.SellerDTO�
-�
-Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java5 5(&+
-	sellerDTOcom.myproject.user.dto.SellerDTO"__id*&
-$
-%0com.myproject.user.dto.SellerDTO��
-Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java6 6(&
-%2java.lang.String";com.myproject.user.entity.Seller#getEmail()Ljava/lang/String;**
-(
-sellercom.myproject.user.entity.Seller2
-getEmail()��
-Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java6 6('
-
-%3void"<com.myproject.user.dto.SellerDTO#setEmail(Ljava/lang/String;)V*-
-+
-	sellerDTOcom.myproject.user.dto.SellerDTO*
-
-%2java.lang.String2setEmail(Ljava/lang/String;)��
-Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java7 7(,	
-%4int"-com.myproject.user.entity.Seller#getIsActive()I**
-(
-sellercom.myproject.user.entity.Seller2getIsActive()��
-Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java7 7(-
-
-%5void".com.infosys.user.dto.SellerDTO#setIsActive(I)V*-
-+
-	sellerDTOcom.myproject.user.dto.SellerDTO*
-	
-%4int2setIsActive(I)��
-Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java8 8($
-%6java.lang.String":com.myproject.user.entity.Seller#getName()Ljava/lang/String;**
-(
-sellercom.myproject.user.entity.Seller2	getName()��
-Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java8 8(%
-
-%7void";com.myproject.user.dto.SellerDTO#setName(Ljava/lang/String;)V*-
-+
-	sellerDTOcom.myproject.user.dto.SellerDTO*
-
-%6java.lang.String2setName(Ljava/lang/String;)��
-Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java9 9(,
-%8java.lang.String">com.myproject.user.entity.Seller#getPassword()Ljava/lang/String;**
-(
-sellercom.myproject.user.entity.Seller2getPassword()��
-Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java9 9(-
-
-%9void"?com.myproject.user.dto.SellerDTO#setPassword(Ljava/lang/String;)V*-
-+
-	sellerDTOcom.myproject.user.dto.SellerDTO*
-
-%8java.lang.String2setPassword(Ljava/lang/String;)��
-Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java: :(2
-%10java.lang.String"Acom.infosys.user.entity.Seller#getPhoneNumber()Ljava/lang/String;**
-(
-sellercom.myproject.user.entity.Seller2getPhoneNumber()��
-Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java: :(3
-%11void"Bcom.infosys.user.dto.SellerDTO#setPhoneNumber(Ljava/lang/String;)V*-
-+
-	sellerDTOcom.myproject.user.dto.SellerDTO*
-
-%10java.lang.String2"setPhoneNumber(Ljava/lang/String;)��
-Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java; ;(,
-
-%12int"-com.myproject.user.entity.Seller#getSellerId()I**
-(
-sellercom.myproject.user.entity.Seller2getSellerId()��
-Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java; ;(-
-%13void".com.infosys.user.dto.SellerDTO#setSellerId(I)V*-
-+
-	sellerDTOcom.myproject.user.dto.SellerDTO*
-
-
-%12int2setSellerId(I)"�
-Y
-OC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/dto/SellerDTO.java< <(-
-+
-	sellerDTOcom.myproject.user.dto.SellerDTO:(
-sellercom.myproject.user.entity.SellerB"" 
-com.myproject.user.dto.SellerDTO

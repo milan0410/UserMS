@@ -1,16 +1,0 @@
-
-@com.myproject.user.entity.Buyer#getPhoneNumber()Ljava/lang/String;X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/entity/Buyer.java0 0("1*�
-1X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/entity/Buyer.java1	 1(�
-�
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/entity/Buyer.java1	 1(
-%0java.lang.String"__id*2*0
-com.myproject.user.entity.Buyer"
-phoneNumber"t
-X
-NC:/Users/Milan Vishnoi/UserMS/src/main/java/com/infosys/user/entity/Buyer.java1 1(
-
-%0java.lang.StringB!
-com.myproject.user.entity.Buyer

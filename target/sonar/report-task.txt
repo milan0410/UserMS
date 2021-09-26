@@ -1,7 +1,0 @@
-organization=milan0410
-projectKey=com.infosys:UserServiceMS
-serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.18249
-dashboardUrl=https://sonarcloud.io/dashboard?id=com.infosys%3AUserServiceMS
-ceTaskId=AXg8xyJeTNNfQE5_yJYE
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXg8xyJeTNNfQE5_yJYE
